@@ -1,0 +1,21 @@
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+/*@media screen and (max-width: 1020px) {*/
+/*  #container, #header, #content, #footer {*/
+/*    float: none;*/
+/*    width: auto;*/
+/*  }*/
+/* #subtitle, #share, #slider, #sidebar{*/
+/*    display:none;*/
+/*  }*/
+/*  p{ font-size: 2em; }*/
+/*}*/

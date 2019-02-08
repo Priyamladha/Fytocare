@@ -1,0 +1,115 @@
+<% include ../partials/header %> 
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<style type="text/css">
+	body{
+	    background:#FAFAFA;
+	}
+	#jumbo_12{
+	    background:;
+	}
+
+
+	</style>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5bc6f1a308387933e5bb9a95/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<div class="row">
+ 		<div class="col-lg-12">
+<div class="container">
+     <div class="jumbotron">
+         <div class="container">
+             <h1><i class="fas fa-tree"></i>
+                        </span> Welcome To Fytocare!</h1>
+             <p>Your personal Plant health care assistant.</p>
+             
+  <a class="ui green basic button" href="/fytocare/new">Add News Feed</a>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     <!--<div class="ui feed">-->
+     <div class="row">
+ 		<div class="col-lg-12">
+         <% campgrounds.forEach(function(campground){ %>
+    
+    
+    <div class="ui big piled segment">
+        <div class="ui divided items">
+                <div class="item">
+                    <div class="ui medium image">
+                        <img class="ui medium rounded image" src="<%= campground.image %>" >
+                    </div>
+                    <div class="content">
+                        <h2><%=campground.name%></h2>
+                        
+                         <div class="description">
+                             <p><%- campground.description.substring(0, 300) %>...</p>
+                         </div>
+                         <div class="extra">
+                             <a class="ui green basic button" href="/fytocare/<%= campground._id %>">
+                                 Read More
+                                 <i class="right chevron icon"></i>
+                             </a>
+                         </div>
+                    </div>
+                </div>
+                   </div>
+    </div>
+            <% }) %>
+     </div>
+     </div>
+// <script>
+// 	window.SGPMPopupLoader=window.SGPMPopupLoader||{ids:[],popups:{},call:function(w,d,s,l,id){
+// 		w['sgp']=w['sgp']||function(){(w['sgp'].q=w['sgp'].q||[]).push(arguments[0]);}; 
+// 		var sg1=d.createElement(s),sg0=d.getElementsByTagName(s)[0];
+// 		if(SGPMPopupLoader && SGPMPopupLoader.ids && SGPMPopupLoader.ids.length > 0){SGPMPopupLoader.ids.push(id); return;}
+// 		SGPMPopupLoader.ids.push(id);
+// 		sg1.onload = function(){SGPMPopup.openSGPMPopup();}; sg1.async=true; sg1.src=l;
+// 		sg0.parentNode.insertBefore(sg1,sg0);
+// 		return {};
+// 	}};
+// 	SGPMPopupLoader.call(window,document,'script','https://popupmaker.com/assets/lib/SGPMPopup.min.js','d9eb616b');
+// </script>
+     
+     
+<!--        <% campgrounds.forEach(function(campground){ %>-->
+            
+            
+<!--                <div class="ui piled segment">-->
+<!--                    <span>-->
+<!--  <img class="ui medium rounded fluid left image" src="<%= campground.image %>">-->
+<!--  <p class="ui right floated"><%- campground.description.substring(0, 100) %>...</p>-->
+<!--</span>-->
+  
+<!--</div>-->
+                
+<!--        <% }); %>-->
+          
+    <!--</div>-->
+    
+
+// <script>
+// 	window.SGPMPopupLoader=window.SGPMPopupLoader||{ids:[],popups:{},call:function(w,d,s,l,id){
+// 		w['sgp']=w['sgp']||function(){(w['sgp'].q=w['sgp'].q||[]).push(arguments[0]);}; 
+// 		var sg1=d.createElement(s),sg0=d.getElementsByTagName(s)[0];
+// 		if(SGPMPopupLoader && SGPMPopupLoader.ids && SGPMPopupLoader.ids.length > 0){SGPMPopupLoader.ids.push(id); return;}
+// 		SGPMPopupLoader.ids.push(id);
+// 		sg1.onload = function(){SGPMPopup.openSGPMPopup();}; sg1.async=true; sg1.src=l;
+// 		sg0.parentNode.insertBefore(sg1,sg0);
+// 		return {};
+// 	}};
+// 	SGPMPopupLoader.call(window,document,'script','https://popupmaker.com/assets/lib/SGPMPopup.min.js','d9eb616b');
+// </script>
+    
+
+<% include ../partials/footer %>
